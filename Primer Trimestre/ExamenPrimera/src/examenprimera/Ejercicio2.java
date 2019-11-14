@@ -19,20 +19,24 @@ public class Ejercicio2 {
         String palabraMaestra = sc.next();
         String palabraSecundaria;
         int longitud = palabraMaestra.length();
+
         do {
             System.out.println("Introduce una palabra secundaria");
             palabraSecundaria = sc.next();
-            if (palabraMaestra.contains(palabraSecundaria)) {
+            if (palabraMaestra.toLowerCase().contains(palabraSecundaria.
+                    toLowerCase())) {
                 System.out.printf("%d letras%n", longitud);
-            } 
-             if (palabraSecundaria.equals(palabraMaestra)) {
+            }
+            if (palabraSecundaria.toLowerCase().equals(palabraMaestra.
+                    toLowerCase())) {
                 for (int i = longitud - 1; i >= 0; i--) {
 
                     System.out.print(palabraMaestra.charAt(i));
                 }
             }
 
-        } while (!palabraMaestra.contains(palabraSecundaria));
+        } while (!palabraMaestra.toLowerCase().contains(palabraSecundaria.
+                toLowerCase()));
 
     }
 }

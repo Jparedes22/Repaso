@@ -75,6 +75,7 @@ public class ExamenPrimera {
                 }
             }
         } while (opcion != 5);
+        
         double totalRefresco = PRECIOREFRESCO * contRefresco;
         double totalCafe = PRECIOCAFE * contCafe;
         double totalBocadillo = PRECIOBOCADILLO * contBocadillo;
